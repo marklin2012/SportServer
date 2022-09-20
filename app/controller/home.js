@@ -32,7 +32,7 @@ class HomeController extends BaseController {
     const res = await instance.get(`${ctx.path}`, { params });
     // 查看是否请求成功
     if (res.status === 200) {
-      console.log("res: ", res.data);
+      // console.log("res: ", res.data);
       ctx.body = JSON.stringify(res.data);
     } else {
       if (res.data) {
